@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.node{
+    width:2em;
+    height: 2em;
+    border: none;
+}
+.text{
+    font-size: 0.5em;
+}
+.node-finish{
+    background-color: red;
+}
+.node-start{
+    background-color: green;
+}
+.node-wall{
+    background-color: rgb(97, 97, 106);
+}
+.node-shortpath{
+    background-color: rgb(221, 117, 221);
+}
+.node-visited{
+    background-color: rgb(89, 211, 183);
+}

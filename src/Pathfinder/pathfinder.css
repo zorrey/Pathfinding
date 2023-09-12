@@ -1,0 +1,97 @@
+body{
+    font-size: 100%;
+    background-color: rgb(224, 222, 219);
+    color: rgb(193, 113, 55);
+    font-family:cursive;
+    font-weight: 900;
+    
+}
+h1{
+    text-shadow: 1px 1px grey;
+    font-size: 3em;
+}
+.grid{
+    background-color: white;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    margin: 2em;
+}
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 2em;
+    color:black;
+}
+a:hover{
+    color:rgb(33, 205, 185);
+}
+/* .gridcell{
+    border: 1px red solid;
+    width:2em;
+    height: 2em;
+} */
+
+button{
+    background-color: unset;
+    color: rgb(193, 113, 55);
+    border: none;
+    font-size: 1.3em;
+    font-weight: 900;
+    font-family:cursive;
+    text-shadow: 1px 1px rgb(124, 28, 28);
+}
+button:hover{
+    color: brown;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tbcell{
+    border: 1px solid black;
+    width:2em;
+    height: 2em;
+}
+.main{
+    display: flex   ;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: honeydew;
+    min-width: 8em;
+    box-shadow: 2px 1px 1px 1px grey;
+    z-index: 1;
+    font-size: 0.8em;
+    text-align: center;
+}
+.drop-content button{
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    width: 100%;
+    
+}
+.drop-content button:hover{
+   background-color: rgb(185, 239, 239);
+   
+
+}
+.message{
+    margin-top: 1em;
+}
