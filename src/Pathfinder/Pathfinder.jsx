@@ -303,7 +303,7 @@ function Pathfinder () {
             <nav className='nav-bar'>
                 <ul className='row'>
                     <li> <button onClick={ ()=>handleStartNode() } style={{color: color.start? "red": ""}}>Start Node</button> </li>
-                    <li> <button onClick={ ()=>handleTargetNode() }  style={{color: color.target? "red": ""}}>Targer Node</button> </li>
+                    <li> <button onClick={ ()=>handleTargetNode() }  style={{color: color.target? "red": ""}}>Target Node</button> </li>
                     <li> <button onClick={ ()=>handleWallNode() }c style={{color: color.wall? "red": ""}} >Wall Nodes</button> </li>
                     <li>  <div className='dropdown'>                        
                           <button className='dropbtn'>Algorithms</button>
