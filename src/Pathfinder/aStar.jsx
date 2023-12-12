@@ -30,11 +30,8 @@ export function aStar ( grid, startNode, finishNode ) { // props - grid, startNo
          }          
         }     
    }
-   return []
-   
+   return []   
 }
-   
-
    
    function getNeighbours (closestNode, grid){
        //console.log('closest', closestNode)
