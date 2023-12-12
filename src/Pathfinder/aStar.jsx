@@ -34,20 +34,7 @@ export function aStar ( grid, startNode, finishNode ) { // props - grid, startNo
    
 }
    
-   function updateNeighbours (node, finishNode, nodesChecked, chosen , grid){
-       const neighbours = getNeighbours(node, grid)
-       for(const n of neighbours){
-        if(!chosen.includes(node)){
-            if(!nodesChecked.includes(node)){
-                nodesChecked.push(n)
-            }else  if(n.distance <= node.distance + 1) continue
-        n.distance = node.distance + 1              
-        n.finishDistance = heuristic(n, finishNode)
-        n.total = n.distance + n.finishDistance
-        n.previous = node         
-        }          
-       }       
-   }
+
    
    function getNeighbours (closestNode, grid){
        //console.log('closest', closestNode)
@@ -60,7 +47,7 @@ export function aStar ( grid, startNode, finishNode ) { // props - grid, startNo
        return neighbours
    }
    
-   function getAllNodes(grid, finishNode){
+/*    function getAllNodes(grid, finishNode){
        const nodes=[]   
        for(let i=0; i<grid.length;i++){
            for(let j=0; j<grid[i].length; j++){            
@@ -72,7 +59,7 @@ export function aStar ( grid, startNode, finishNode ) { // props - grid, startNo
          }
        //  console.log('nodes---', nodes)
          return nodes
-   }
+   } */
    function sortNodes(unvisited){
        unvisited.sort((a,b)=>
            a.total-b.total

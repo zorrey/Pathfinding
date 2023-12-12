@@ -11,8 +11,11 @@ export function dijkstra ( grid, startNode, finishNode ) { // props - grid, star
     while( !!unvisited.length ){
         sortNodes(unvisited)
         const closest = unvisited.shift()
-        if(closest.isWall) continue
-        if(closest.distance === Infinity) { console.log('cannot find the path')   ; return [] }
+        if(closest.isWall) continue;
+        if(closest.distance === Infinity) { 
+        console.log('cannot find the path') ; 
+        return [] 
+    }
         closest.isVisited = true
         visitedSorted.push(closest)
         if(closest === finishNode) {
